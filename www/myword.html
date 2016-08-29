@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Tutorial</title>
+	 
+	 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+
+	 <script   src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
+	 
+	 	 <!--<link rel="stylesheet" href="js/jquery.mobile-1.3.1.min.css" />-->
+	 
+	 <link rel="stylesheet" href="css/index.css" /> 
+	 
+	</head>
+  
+  <body>
+ 
+ 	<div data-role="page" id="my_word_page"   data-theme="b">
+
+		<div data-role="header" data-theme="f" class="ui-header ui-bar-f" role="banner">
+		    <a style="top:12px;"  href="profile.html"  class="ui-btn-left ui-btn ui-shadow ui-btn-corner-all ui-btn-up-a" data-corners="true" data-shadow="true" data-wrapperels="span" data-theme="a">
+		        <span class="ui-btn-inner ui-btn-corner-all">
+		            <span class="ui-btn-text">Profile</span>
+		        </span>
+		    </a>
+   			 <h1 class="ui-title" role="heading" aria-level="1">Sarkari Pariksha</h1>
+		    <a style="top:12px;" data-icon="check"  id="btn_logout" class="ui-btn-right ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"><span class="ui-btn-inner ui-btn-corner-all">
+		            <span class="ui-btn-text">Logout</span>
+		        </span>
+		    </a>
+	</div>
+	<div data-role="content" id="my_word_page_content"  class="ui-content" role="main" >
+	Coming Soon  to word page
+	</div>
+	
+	 
+	 </div>
+  </body>
+<script type="text/javascript">
+	$( document ).ready(function() {
+    console.log( "ready!" );
+    var siteName = localStorage.getItem("siteName");
+    var userId = localStorage.getItem("userId");
+
+    var userList = {'user_id': userId};
+
+    console.log('user Data'+userList);
+    console.log('site Data'+siteName);
+
+    siteUrl = siteName+"/wp-content/plugins/tet-india/m/ttMyword.php";
+
+    $.ajax({
+        type: "GET",
+        url: siteUrl,
+        data: userList,
+        cache: false,
+        dataType: "text",
+        beforeSend: function () {
+            
+        },
+        complete: function () {
+           
+        },
+        success: function (data, status)
+        {
+
+            dataT = $.trim(data);
+            console.log(dataT);
+            $('#my_word_page').empty();
+
+            $('#my_word_page').append(dataT);
+            $('#my_word_page').trigger('create');
+
+
+
+
+
+        },
+        error: function (jqXHR, status, errorThrown)
+        {
+            alert('Network error has occurred please try again!');
+        }
+
+    });
+
+});
+</script>  
+</html>

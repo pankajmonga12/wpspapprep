@@ -1,0 +1,458 @@
+.ui-content{max-width:960px; margin:auto;}
+.tt_btn
+{
+	color: blue;
+}
+.ui-btn-up-d
+{
+	color: #173774;
+}
+
+.tt_home_full {
+width: 100%;
+float: left;
+text-align: center;
+margin-left: 15px;
+list-style:none;
+margin:10px;
+padding: 0px;
+}
+
+.tt_home_full li {float: left;
+margin: 10px;
+
+width: 34%;
+border:1px solid gray;
+list-style: none;
+padding-left: 6px;
+padding-top:10px;
+padding-bottom: 10px;
+padding-right: 10px;
+}
+
+.tt_text_dec
+{
+	color:black;text-decoration: none;
+}
+
+.tt_home_icon img{ width:36px; height:36px;}
+  .tt_home_icon span{float:left; width:100%; text-align:center;}
+  .tt_login_head  {
+  width:100%;text-align:center;background-color: #0049a7;margin-bottom:20px;
+  }
+
+.ui-bar-f {
+  padding: 10px 0px;
+  background-color: #0049a7;
+  border-bottom: 2px solid #036;
+  color: #fff;
+}
+
+.tt_inv
+{
+	display: none;
+	border-top:1px solid #BBBBBB;
+	padding-top: 5px; 
+}
+
+.tt_ul li
+{
+	margin-bottom: 10px;
+}
+
+.tt_ul a
+{
+	text-decoration: none;
+	
+} 
+
+.tt_tutorial_content 
+{
+    border:none;
+    background: none repeat scroll 0 0 #fff;
+    font-size: 18px;
+    display: inline-block;
+    margin: 8px 0;
+    position: relative;
+    width: 100%;
+}
+.tutorial_header
+{
+   padding-bottom: 5px;font-weight: bold;font-size: 15px;background-color: #26A3B2;color: white;
+    position: relative;padding: 1em 15px 1em 49px;cursor: pointer; z-index:999;
+}
+.tutorial_header:before{
+       background: url("../images/toggle_icons.png") no-repeat scroll 7px 6px #5ea5d7;
+    color: #fff;
+    content: " ";
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 24px;
+    left: 15px;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    top: 0.85em;
+    width: 24px;
+    border-radius:50%;
+    background-color: #666666;
+}
+.tutorial_header_active:before{
+       background: url("../images/toggle_icons.png") no-repeat scroll 7px 6px #5ea5d7;
+    color: #fff;
+    content: " ";
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 24px;
+    left: 15px;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    top: 0.85em;
+    width: 24px;
+    border-radius:50%;
+    background-color: #666666;
+    background-position: 7px -21px; 
+}
+.content-data
+{
+    padding: 5px;
+    display: none;
+}
+h3{
+    margin: 0px;
+}
+
+table {
+    border-color: #ddd;
+    border-image: none;
+  	width:80%;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+     border-spacing:0px;
+    
+}
+thead {
+    background-color: #eee;
+    color: #555;
+    font-size: 1em;
+}
+th, td {
+    border-color: #ddd;
+    border-image: none;
+    border-right: 1px solid #ddd;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    padding: 2px;
+    font-size: 12px;
+}
+
+td, th {
+    text-align: left;
+}
+
+p {
+    font-family: inherit;
+    font-weight: normal;
+    line-height: inherit;
+    margin: 0 0 1em;
+    padding: 0px;
+}
+
+.ttTutorial span{
+    font-family: inherit;
+    font-weight: normal;
+    
+    font-size:15px;
+}
+
+.tt_ex_content
+{
+	border-top: 1px solid gray;
+	margin-top: 5px;
+	padding-bottom:15px;
+	font-size:12px;
+	font-weight:normal;
+	padding-top: 5px;
+	
+}
+/* create a new theme for button theme name is ttBtn 
+use this text with each button or link
+ data-mini="true" data-inline="true"  data-role="button" data-theme="ttBtn"
+ */
+.ui-btn-up-ttBtn,
+.ui-btn-hover-ttBtn,
+.ui-btn-down-ttBtn {
+    border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px;
+    box-shadow: none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important;
+    text-decoration: none;
+    }
+    .ui-btn-up-ttBtn .ui-btn-inner,
+    .ui-btn-hover-ttBtn .ui-btn-inner,
+    .ui-btn-down-ttBtn .ui-btn-inner {
+        color: white;
+        overflow: visible;
+        text-shadow: 0 -1px 0 #000;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        border: 1px solid #333;
+        border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+        background: -webkit-linear-gradient(top, #0049a7 0%,#0049a7 50%,#0049a7 51%,#0049a7 100%);
+        box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+            -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+            -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+        }
+ /*---------------------------------------*/
+ 
+ /* create a new theme for disable button theme name is ttBtnDisable 
+use this text with each button or link
+ data-mini="true" data-inline="true"  data-role="button" data-theme="ttBtnDisable"
+ */
+.ui-btn-up-ttBtnDisable,
+.ui-btn-hover-ttBtnDisable,
+.ui-btn-down-ttBtnDisable {
+    border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px;
+    box-shadow: none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important;
+    text-decoration: none;
+    }
+    .ui-btn-up-ttBtnDisable .ui-btn-inner,
+    .ui-btn-hover-ttBtnDisable .ui-btn-inner,
+    .ui-btn-down-ttBtnDisable .ui-btn-inner {
+        color: #064DA9;
+        overflow: visible;
+        text-shadow: 0 -1px 0 #000;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        border: 1px solid #AEAEAE;
+        font-weight:600;
+        border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+        background: -webkit-linear-gradient(top, #CCCCCC 0%,#CCCCCC 50%,#CCCCCC 51%,#CCCCCC 100%);
+        box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+            -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+            -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+        }
+ /*---------------------------------------*/
+ 
+ 
+ul
+{
+	padding-left:0px;
+}
+ 
+ #sp_head
+ {
+ font-size:15px;
+ }
+ 
+ .tt_ques_lf
+ {
+ 	width:100%;float: left;
+ }
+ 
+ .tt_ques_lf_inn
+ {
+ 	float: left;width:10%;padding-right: 5px;padding-top: 5px;
+ }
+  .tt_ques_rt_inn
+ {
+ 	float: left; width:85%;
+ }
+ .tt_options
+{
+    width: 100%;float: left;padding-bottom: 15px;min-height: 200px; 
+}
+.tt_heading
+ {
+     font-size: 15px;font-weight: bold;padding-bottom: 20px;
+ }
+.tt_q_no
+{
+    width:61px;float: left;padding-right: 5px;
+}
+.tt_exam_scroll
+{
+    width: 100%;min-height: 300px; 
+    border-top: 1px solid #D8D8D8; font-size: 18px;
+    padding-top: 10px;
+}
+.tt_prev_btn
+ {
+     width: 56%;float:left;text-align: right;
+ }
+ 
+ .tt_next_btn
+ {
+     width: 10%;float:left;text-align: left;padding-left: 10px;
+ }
+ 
+  .tt_ques_rt
+ {
+ 	float: left;width: 65%;
+ }
+ 
+  .tt_q_left
+{
+    width: 100%;float: left;
+}
+.tt_q_right{
+    float: right;  
+}
+
+.tt_at_q_hd{
+     
+    background-color: #0A50AA;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.tt_pend_q
+{
+	text-align:center; width:38px !important;
+	float:left; 
+    border: 1px solid black;
+	background-color: white;margin-right: 5px;
+	margin-bottom: 5px;font-size: 15px;
+	cursor: pointer;
+	color:black !important;
+}
+
+ .tt_dash_text{
+     width: 100%;margin-bottom: 10px;padding-top: 2px;border-bottom: 1px solid #D8D8D8;font-size:12px;text-align: right;
+    padding-bottom: 11px;color: #28a5b3;
+ }
+ li.current {
+  background-color:  #78c8ce;
+}
+
+#ttMenu
+{
+	list-style: none;
+}
+.ttDiv
+{
+  border-radius: 0.6em;
+   clear: both;
+   overflow: hidden;
+   padding: 0.4em 15px;
+   position: relative;	
+   background-color: white;
+   margin-top:10px;
+   margin-bottom: 10px;
+   font-size:14px;
+}
+.sub_wise_hd
+{
+
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #76c5cb;
+    text-align: center;
+}
+
+/*--------------Radio button css-----------------*/
+
+ 
+
+/*--------------Radio button css-----------------*/
+
+.tt_ques_hd2
+ {
+ font-size:15px;font-weight:bold;padding-bottom:13px;border-bottom: 1px solid #D8D8D8;text-align: right;
+ }
+ 
+ .tt_sub_hd
+ {
+ width:100%;padding-top: 7px;font-weight: bold;color:#78C8CE;
+ }
+ .tt_exam_hd
+ {
+ width:100%;font-size: 18px;font-weight: bold;color:#1155AD;margin-bottom: 5px;
+ }
+ .tt_timer_hd
+ {
+ display: none;text-align:left;width:40%;float: left;margin-bottom: 10px;margin-top: 10px;font-weight: bold;
+ }
+ .tt_required{
+    color: red;
+}
+.ex_div
+{
+	display: none;
+	list-style: inside;
+	font-size:15px;
+	border-top:1px solid #5D6165;
+	padding-top: 9px;
+}
+
+.category_headings
+{
+	width:100%;
+	
+}
+.ex_header
+{
+	width:90%;
+	padding: 8px;
+	font-weight: bold;
+	text-align: center;
+}
+.planDesc ul
+{
+	list-style: inside;
+}
+
+.payment_methods li
+{
+	list-style: none;
+}
+.tt_payment_box
+{
+	background:  #EBE8EB ;
+	color: #5E5E5E;
+	border-radius:2;
+	line-height: 1.5em;
+	position: relative;
+	margin: 1em 0;
+	padding: 1em 5%;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	 
+}
+ 
+.subDivClass ul
+{
+	list-style: none;
+}
+.tt_sub_desc
+{
+	border:none;
+	width:100%;
+}
+.tt_chekout
+{
+	width: :100%;
+	border-color: #ddd;
+    border-image: none;
+  	border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-spacing:0px;
+}
+
+.tt_chekout td
+{
+	padding: 5px;
+}
+.tt_thank
+{
+	border:none;
+}
+
+.tt_thank td
+{
+	border:none;
+	font-size:14px;
+}
